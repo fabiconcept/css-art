@@ -1,0 +1,411 @@
+.canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vmin;
+    width: 80vmin;
+    overflow: hidden;
+    background-color: #eee;
+    background-position: center;
+    background-image: url('../cheat/lionel-messi-rumors-moved-to-psg-barcelona-fc-argentina-national-football-player-caricatur-cartoon-design-226968023.jpg');
+}
+
+:root {
+    --skin-main: #eaad8e;
+    --skin: #eaad8e54;
+    --skin-shadow-01: #e89166;
+    --skin-shadow-02: #cf6b4a;
+    --hair: #471c16;
+    --lip: #c85a4b;
+    --eye: #613226;
+    --white: #fff;
+    --circle: #d7c3c4;
+    --shirt-blue: #1f3759;
+    --shirt-red: #ae202d;
+    --shirt-brown: #4f2030;
+    --black: #000;
+    --hair-shadow: #71271b;
+}
+
+.canvas div {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+
+.circle{
+    height: 82%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+    top: 56.75%;
+    left: 50%;
+    /* background-color: var(--circle); */
+    overflow: hidden;
+}
+
+.hair{
+    height: 40%;
+    width: 41%;
+    transform: translate(-50%, -50%);
+    top: 24%;
+    left: 49%;
+    background-color: var(--hair);
+    border-radius: 35% 35% 30% 40% / 55% 60% 30% 40%;
+}
+
+.hair::after{
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 70%;
+    background-color: var(--hair);
+    border-radius: 100% 50% / 50% 60%;
+    transform: rotate(-5deg);
+    left: 7%;
+    top: -3.5%;
+}
+
+.beard{
+    height: 40%;
+    width: 38%;
+    background-color: var(--hair);
+    top: 45%;
+    left: 49%;
+    border-radius: 0 0 50% 50% / 0 0 70% 79%;
+    transform: translate(-50%, -50%);
+}
+
+.face{
+    height: 48%;
+    width: 36%;
+    background-color: var(--skin-main);
+    transform: translate(-50%, -50%);
+    top: 33.55%;
+    left: 49.15%;
+    border-radius: 50% 40% 50% 50% / 50% 40% 40% 50%;
+}
+
+.hair-strand-01{
+    height: 30%;
+    width: 50%;
+    border-top: 6vmin solid var(--hair);
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    left: 37%;
+    top: -8%;
+    transform: rotate(8deg);
+}
+
+.hair-strand-02{
+    height: 30%;
+    width: 50%;
+    border-top: 4vmin solid var(--hair);
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 20%;
+    left: -2%;
+    top: 4%;
+    transform: rotate(-50deg);
+}
+
+.patch-01{
+    height: 25%;
+    width: 40%;
+    border-top: 3vmin solid var(--hair);
+    border-radius: 90%;
+    left: 20%;
+    top: -1%;
+    transform: rotate(-12deg);
+}
+
+.patch-02{
+    height: 20%;
+    width: 10%;
+    border-top: 1vmin solid var(--hair);
+    border-left: 1vmin solid var(--hair);
+    border-right: 0 solid transparent;
+    left: 1%;
+    top: 31%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 35%;
+}
+
+.patch-03{
+    height: 10%;
+    width: 10%;
+    border-right: 1vmin solid var(--hair);
+    transform: rotate(12deg);
+    left: -5.65%;
+    top: 48%;
+    border-radius: 50%;
+}
+
+.patch-04{
+    height: 32%;
+    width: 8%;
+    border-left: 2vmin solid var(--hair);
+    transform: rotate(10deg);
+    left: -2%;
+    top: 25%;
+    border-radius: 80%;
+}
+
+.patch-05{
+    height: 36%;
+    width: 30%;
+    border-left: 1.5vmin solid var(--hair);
+    transform: rotate(-4deg);
+    right: -25.5%;
+    top: 25%;
+    border-radius: 10% 30%;
+}
+
+.patch-06{
+    height: 36%;
+    width: 30%;
+    border-left: 2vmin solid var(--hair);
+    transform: rotate(175deg);
+    right: -1%;
+    top: 8%;
+    border-radius: 10% 90%;
+}
+
+.patch-07{
+    height: 36%;
+    width: 90%;
+    border-left: 3vmin solid var(--hair);
+    transform: rotate(160deg);
+    right: 1%;
+    top: 3%;
+    border-radius: 0 50% / 0 90%;
+}
+
+.patch-08{
+    height: 10%;
+    width: 17%;
+    border-radius: 100% 100% 0 0 / 100% 100% 100% 100%;
+    background-color: var(--hair);
+    bottom: -7%;
+    left: 43.55%;
+}
+
+.patch-09{
+    height: 20%;
+    width: 58%;
+    border-top: 2vmin solid var(--hair);
+    border-radius: 50% 30%;
+    transform: rotate(64deg);
+    bottom: 10%;
+    left: -28%;
+}
+
+.patch-09 + .patch-09{
+    border-top: 1.55vmin solid var(--hair);
+    border-radius: 100% 30%;
+    transform: rotate(130deg);
+    left: auto;
+    width: 55%;
+    right: -12%;
+    bottom: 15%;
+}
+
+.patch-10{
+    height: 20%;
+    width: 45%;
+    border-top: 2vmin solid var(--hair);
+    border-radius: 0% 50%;
+    transform: rotate(50deg);
+    bottom: -2.5%;
+    left: -9%;
+}
+
+.patch-11{
+    height: 30%;   
+    width: 46.5%;
+    transform: rotate(3deg);
+    background-color: var(--hair);
+    top: 77.55%;
+    border-radius: 5% 9%;
+    left: 29%;
+}
+
+.patch-12{
+    height: 15%;
+    width: 10%;
+    border-right: 1vmin solid var(--hair);
+    border-bottom: 2vmin solid var(--hair);
+    border-radius:  0 0 70% 0%;
+    bottom: 6%;
+    left: 22.55%;
+    transform: rotate(5deg);
+}
+
+.patch-12 + .patch-12{
+    left: auto;
+    border-right: 1vmin solid var(--hair);
+    border-bottom: 2vmin solid var(--hair);
+    transform: scaleX(-1) rotate(5deg);
+    right: 18%;
+    border-radius:  0 0 50% 50%;
+}
+
+.patch-13{
+    height: 16%;
+    top: 69%;
+    left: 36%;
+    transform: rotate(64deg);
+    width: 9%;
+    border-radius: 30% / 10%;
+    background-color: var(--hair);
+}
+
+.patch-13 + .patch-13{
+    left: auto;
+    right: 32%;
+    top: 69.5%;
+    transform: rotate(-57deg);
+}
+
+.patch-14{
+    height: 14%;
+    width: 7%;
+    border-bottom: 1.55vmin solid var(--hair);
+    border-radius: 0 0 40% 40%;
+    left: 48.55%;
+    top: 63.55%;
+    transform: rotate(-5deg);
+}
+
+.patch-14::after{
+    content: "";
+    position: absolute;
+    height: 20%;
+    background-color: var(--hair);
+    width: 100%;
+    bottom: -50%;
+}
+
+.patch-15{
+    height: 10%;
+    width: 8%;
+    border-bottom: 1.55vmin solid var(--hair);
+    border-radius: 40% 40%;
+    left: 41%;
+    top: 70.55%;
+    transform: rotate(-130deg);
+}
+
+.mouth-patch{
+    height: 20%;
+    width: 40.75%;
+    left: 32.25%;
+    bottom: .5%;
+    border-radius: 50% 50% 38% 38% / 20% 20% 70% 70%;
+    background-color: var(--skin-main);
+}
+
+.mouth-patch::after{
+    content: '';
+    position: absolute;
+    height: 20%;
+    width: 50%;
+    background-color: var(--skin-main);
+    border-radius: 20% 20% / 20% 80%;
+    transform: rotate(-25deg);
+    top: -5%;
+}
+
+.mouth-patch::before{
+    content: '';
+    position: absolute;
+    height: 20%;
+    width: 52%;
+    background-color: var(--skin-main);
+    border-radius: 20% 20% / 80% 20%;
+    transform: rotate(22deg);
+    top: -5%;
+    right: .75%;
+}
+
+
+/* .lip{
+    width: 75.55%;
+    transform: translate(-50%, -50%) rotate(1deg);
+    left: 48.65%;
+    top: 28%;
+    height: 18%;
+    clip-path: polygon(0% 0%, 30% 100%, 80% 30%);
+    border-radius: 0 20% 10% 100%;
+    opacity: .5;
+    background-color: var(--black);
+} */
+
+.lip{
+    transform: translate(-50%, -50%) rotate(1deg);
+    left: 31%;
+    top: 18%;
+    border-radius: 10% 20% 20% 0;
+    width: 40.55%;
+    height: 20%;
+    opacity: .5;
+    background-color: var(--black);
+}
+
+
+.neck{
+    height: 15%;
+    width: 29%;
+    bottom: 30%;
+    background-color: currentColor;
+    color: var(--white);
+    left: 48.25%;
+    transform: translate(-50%, -50%);
+}
+
+.neck::before{
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 38%;
+    border-right: 3vmin solid currentColor;
+    border-bottom: 3vmin solid transparent;
+    border-radius: 0 0 100% 0 / 50%;
+    left: -38%;
+    top: -28%;
+}
+
+.neck::after{
+    content: '';
+    position: absolute;
+    height: 147%;
+    width: 36%;
+    border-left: 3vmin solid currentColor;
+    border-bottom: 3vmin solid transparent;
+    border-radius: 0 0 0 100% / 40%;
+    right: -35%;
+    left: auto;
+    top: -28%;
+}
+
+.skin{
+    height: 25.5%;
+    width: 25.5%;
+    transform: rotate(270deg) translate(-50%, -50%);
+    left: 42.55%;
+    top: 32.75%;
+    z-index: 65654766;
+}
+
+.shad{
+    height: 143%;
+    width: 120%;
+    box-shadow: 3vmin 0 0 2vmin var(--black);
+    border-radius: 50% / 70% 0 50% 70%;
+    clip-path: polygon(0% 0% , 50% 50% , 0% 100%);
+    background-color: var(--black);
+}
