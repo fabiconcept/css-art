@@ -5,8 +5,8 @@ Hello and welcome to my repository of drawings made entirely with HTML & CSS! I 
 ### Sneak Peak
 
 [<img src="snapshot/screenshot005.jpg" alt="snapshot05" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/monster01.html)
-[<img src="snapshot/screenshot002.jpg" style="margin-left: 10px" alt="snapshot02" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/figure01.html)
-[<img src="./snapshot/screenshot001.jpg"  style="margin-left: 10px" alt="snapshot01" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/boyFromTutorial.html)
+[<img src="snapshot/screenshot002.jpg" style="margin-left: 10px" alt="snapshot02" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/boyFromTutorial.html)
+[<img src="./snapshot/screenshot001.jpg"  style="margin-left: 10px" alt="snapshot01" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/figure01.html)
 [<img src="snapshot/screenshot004.jpg" style="margin-left: 10px" alt="snapshot04" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/hopper.html)
 [<img src="snapshot/screenshot003.jpg" style="margin-left: 10px" alt="snapshot03" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/figure02.html)
 
