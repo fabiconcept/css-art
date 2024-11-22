@@ -1,0 +1,21 @@
+.canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vmin;
+    width: 80vmin;
+    background-color: #efefef;
+    background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0);
+    background-size: 10% 100%, 100% 10%;
+    overflow: hidden;
+}
+
+.canvas div {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.head {
+    posi
+}
