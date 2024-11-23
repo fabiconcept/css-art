@@ -17,5 +17,114 @@
 }
 
 .head {
-    posi
+    height: 35%;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.head .tophead {
+    height: 70%;
+    width: 15rem;
+    background-color: #a2834a;
+    right: 0%;
+    border-radius: 5rem 5rem 4rem 5rem;
+    top: 18%;
+    transform-origin: top right;
+    transform: translate(25.5%, -50%) rotate(-10deg);
+}
+
+.head .backhead {
+    height: 100%;
+    width: 9rem;
+    border-radius: 100% 70% 50% 50%;
+    background-color: #a2834a;
+    top: 45%;
+    left: 50%;
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.head .nose {
+    height: 60%;
+    width: 4.75rem;
+    border-radius: 40% 20% 40% 70%;
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+    background-color: #000;
+    top: 28%;
+    transform: translate(-248%, -50%) rotate(5deg);
+}
+
+.head .ear-end {
+    height: 23%;
+    width: 1rem;
+    border-radius: 100% 70% 50% 50%;
+    background-color: #a2834a;
+    top: -20%;
+    position: absolute;
+    border: 2px solid #000;
+    left: 50%;
+    transform-origin: bottom left;
+    transform: translate(-50%, -52%) rotate(5deg);
+    clip-path: polygon(57% 0, 100% 0, 100% 89%, 58% 89%);
+}
+
+
+.head .ear-start {
+    height: 23%;
+    width: 4rem;
+    border-radius: 50% 50% 70% 70%;
+    background-color: #a2834a;
+    top: -21%;
+    left: 5%;
+    position: absolute;
+    border: 2px solid #000;
+    transform-origin: bottom left;
+    transform: translate(-18%, -50%) rotate(5deg);
+    clip-path: polygon(0 0, 20% 0, 25% 89%, 0 89%);
+}
+
+.head .right-ear-end {
+    height: 33%;
+    width: calc(1rem * 2);
+    border-radius: 100% 70% 50% 50%;
+    background-color: #a2834a;
+    top: -20%;
+    border: 2px solid #000;
+    position: absolute;
+    transform-origin: bottom left;
+    transform: translate(15%, -52%) rotate(20deg);
+    clip-path: polygon(57% 0, 100% 0, 100% 81%, 58% 81%);
+}
+
+.head .right-ear-start-thing {
+    height: 15%;
+    width: calc(1rem * 2);
+    border-radius: 100% 70% 50% 50%;
+    top: -23%;
+    border: 3px solid #000;
+    position: absolute;
+    transform-origin: bottom left;
+    transform: translate(185%, -25%) rotate(-1deg) scaleX(-1);
+    clip-path: polygon(57% 0, 100% 0, 100% 81%, 58% 81%);
+}
+
+.head .right-ear-start {
+    height: 33%;
+    width: calc(4rem * 2);
+    border: 2px solid #000;
+    border-radius: 50% 50% 70% 70%;
+    background-color: #a2834a;
+    top: -23%;
+    left: 5%;
+    position: absolute;
+    transform-origin: bottom left;
+    transform: translate(0.5%, -50%) rotate(20deg);
+    clip-path: polygon(0 0, 20% 0, 25% 83%, 0 83%);
+}
+
+/* 
+* {
+    outline: 1px solid red;
+} */
