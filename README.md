@@ -10,6 +10,7 @@ Hello and welcome to my repository of drawings made entirely with HTML & CSS! I 
 [<img src="snapshot/screenshot004.jpg" style="margin-left: 10px" alt="snapshot04" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/hopper.html)
 [<img src="snapshot/screenshot003.jpg" style="margin-left: 10px" alt="snapshot03" width="100"/>](https://raw.githack.com/fabiconcept/css-art/main/figure02.html)
 [<img src="snapshot/Screenshot%202025-05-06%20at%2018.48.22.png" style="margin-left: 10px" alt="snapshot03" width="100"/>](https://rawcdn.githack.com/fabiconcept/css-art/396cb3c7bae488b5ad82ae703c816f6c4810aed4/among-us.html)
+[<img src="snapshot/Screenshot%202025-09-05%20at%2014.49.09.png" style="margin-left: 10px" alt="snapshot03" width="100"/>](https://rawcdn.githack.com/fabiconcept/css-art/03679d4dec43c2f6f6bf4d036d0d820c3ba119e2/figure05.html)
 
 
 
