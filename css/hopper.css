@@ -188,7 +188,7 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(113deg);   
     background-color: var(--white);
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+    clip-path: polygon(0% 0%, 0% 100%, 55% 100%);
 }
 
 .foot{
