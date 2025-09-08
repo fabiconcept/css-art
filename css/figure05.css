@@ -13,7 +13,7 @@
     transform: translate(-50%, -50%);
     height: 80vmin;
     width: 80vmin;
-    /* background-color: #efefef; */
+    background-color: #efefef;
     /* background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0); */
     background-size: 10% 80%, 80% 10%;
     overflow: hidden;
@@ -22,6 +22,48 @@
 .canvas div{
     position: absolute;
     box-sizing: border-box;
+}
+
+
+
+.character {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.character + .character {
+    transform: scaleY(0.5) translateY(33%) translateX(9%) skew(-15deg);
+    filter: blur(1vmin);
+    opacity: .5;
+    z-index: 0;
+
+    .eye {
+        display: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to top, transparent 5%, #efefef 100%);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-image: linear-gradient(to top, transparent 5%, #efefef 100%);
+    }
+
 }
 
 .head {
