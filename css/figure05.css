@@ -1,10 +1,4 @@
 
-.canvas{
-    --cloth: #181833;
-    --skin: #fccba5;
-    --waist-belt: #f0404e;
-    --katana-handle: #f8d15d;
-}
 
 .canvas {
     position: absolute;
@@ -14,7 +8,7 @@
     height: 80vmin;
     width: 80vmin;
     background-color: #efefef;
-    /* background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0); */
+    background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0), radial-gradient(circle, rgb(248, 174, 174), rgb(198, 198, 255));
     background-size: 10% 80%, 80% 10%;
     overflow: hidden;
 }
@@ -25,15 +19,46 @@
 }
 
 
+.floor{
+    height: 100%;
+    width: 120%;
+    background-color: #000;
+    top: 47.5%;
+    left: 22%;
+    transform: skew(-25deg);
+    filter: blur(1vmin);
+    transform-origin: top left;
+    opacity: .25;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -48%;
+        left: 0%;
+        height: 100%;
+        width: 1%;
+        transform: skew(25deg);
+        background-color: #000;
+    }
+}
+
 
 .character {
     height: 100%;
     width: 100%;
     z-index: 1;
     margin-top: 5%;
+    --cloth: #181833;
+    --skin: #fccba5;
+    --waist-belt: #f0404e;
+    --katana-handle: #f8d15d;
 }
 
 .character + .character {
+    --cloth: #000;
+    --skin: #000;
+    --waist-belt: #000;
+    --katana-handle: #000;
     transform: scaleY(0.5) translateY(33%) translateX(9%) skew(-15deg);
     filter: blur(1vmin);
     opacity: .5;
