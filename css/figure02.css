@@ -6,9 +6,9 @@
     height: 80vmin;
     width: 80vmin;
     overflow: hidden;
-    /* background-color: #eee; */
-    /* background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0); */
-    /* background-size: 10% 100%, 100% 10%; */
+    background-color: #ffe3a2;
+    /* background-image: linear-gradient(to right, transparent 99%, rgb(214, 214, 214) 0), linear-gradient(to bottom, transparent 99%, rgba(214, 214, 214, 0.1) 0); */
+    background-size: 10% 100%, 100% 10%;
 }
 
 :root {
@@ -23,6 +23,54 @@
 .canvas div {
     position: absolute;
     box-sizing: border-box;
+}
+
+.character {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.character + .character {
+    transform: scaleY(0.5) translateY(40%) translateX(11%) skew(-15deg);
+    filter: blur(1vmin);
+    opacity: .5;
+    z-index: 0;
+
+    .eye {
+        display: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to top, transparent 5%, #ffe3a2 100%);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-image: linear-gradient(to top, transparent 5%, #ffe3a2 100%);
+    }
+
+}
+
+.shadow {
+    --skin: #000;
+    --iris: #000;
+    --dark: #000;
+    --patch: #000;
+    --black: #000;
+    --white: #000;
 }
 
 .body{
