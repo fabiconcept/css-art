@@ -4,6 +4,8 @@
     top: 50%;
     position: absolute;
     left: 50%;
+    background-color: #70ff23;
+    overflow: hidden;
     transform: translate(-50%, -50%);
 }
 
@@ -12,13 +14,56 @@
     box-sizing: border-box;
 }
 
-.canvas{
+.character {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-top: 5%;
     --body-dark: #724c85;
     --body-light: #9575cd;
     --tongue: #d32f2f;
     --dark: #28314e;
     --shadow: #553983;
     --eye: #2196f3;
+}
+
+.character + .character {
+    --body-dark: #000;
+    --body-light: #000;
+    --tongue: #000;
+    --dark: #000;
+    --shadow: #000;
+    --eye: #000;
+    transform: scaleY(0.5) translateY(40%) translateX(11%) skew(-15deg);
+    filter: blur(2vmin);
+    opacity: .5;
+    z-index: 0;
+
+    .eye {
+        display: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to top, transparent 5%, #56b01a 100%);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-image: linear-gradient(to top, transparent 5%, #7bff23 100%);
+    }
+
 }
 
 .body{
@@ -235,7 +280,7 @@
     bottom: -12%;
     left: 40%;
     transform: translate(-50%, -50%) rotate(5deg) scaleY(-1) scale(80%);
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .teeth-down-mid + .teeth-down-mid{
