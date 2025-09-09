@@ -4,7 +4,7 @@
     top: 50%;
     position: absolute;
     left: 50%;
-    background-color: #70ff23;
+    background-color: #fff;
     overflow: hidden;
     transform: translate(-50%, -50%);
 }
@@ -34,7 +34,7 @@
     --dark: #000;
     --shadow: #000;
     --eye: #000;
-    transform: scaleY(0.5) translateY(40%) translateX(11%) skew(-15deg);
+    transform: scaleY(0.5) translateY(42%) translateX(12%) skew(-15deg);
     filter: blur(2vmin);
     opacity: .5;
     z-index: 0;
@@ -50,7 +50,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(to top, transparent 5%, #56b01a 100%);
+        background-image: linear-gradient(to top, transparent 5%, #fff 100%);
     }
 
     &::before {
@@ -61,7 +61,7 @@
         height: 100%;
         width: 100%;
         z-index: 1;
-        background-image: linear-gradient(to top, transparent 5%, #7bff23 100%);
+        background-image: linear-gradient(to top, transparent 5%, #fff 100%);
     }
 
 }
