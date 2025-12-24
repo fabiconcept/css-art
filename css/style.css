@@ -5,6 +5,7 @@
     transform: translate(-50%, -50%);
     height: 80vmin;
     width: 80vmin;
+    perspective: 100vmin;
     /* background-color: #eee;
     background-image: linear-gradient(to right, transparent 99%, gray 0), linear-gradient(to bottom, transparent 99%, gray 0);
     background-size: 10% 100%, 100% 10%; */
@@ -16,6 +17,42 @@
     --hair: #fe8;
     --shirt: #eef4ff;
     --line: rgba(80, 0, 0, 0.15);
+}
+
+
+.character {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+}
+
+.character + .character {
+    transform: scaleY(-1) translateY(-90%);
+    /* opacity: .5; */
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 150%;
+        width: 100%;
+        background-image: linear-gradient(to top, transparent 10%, #fff);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 150%;
+        z-index: 1;
+        width: 100%;
+        background-image: linear-gradient(to top, transparent 10%, #fff);
+    }
 }
 
 .background div {
