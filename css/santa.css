@@ -45,10 +45,18 @@
     transform: translateX(-50%);
     width: 30vmin;
     height: 30vmin;
-    background-color: var(--hat-color);
-    border-radius: 10% 10% 0% 0%;
-    box-sizing: border-box;
-    border: 0.5vmin solid var(--black-color);
+    
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: var(--hat-color);
+        border-radius: 50% 50% 0% 0%;
+        box-sizing: border-box;
+        border: 0.5vmin solid var(--black-color);
+        width: 30vmin;
+        height: 30vmin;
+        z-index: -1;
+    }
 
 
     .chopper-logo {
@@ -164,6 +172,76 @@
         right: 10%;
         rotate: 10deg;
     }
+
+    .hat-top {
+        position: absolute;
+        width: 40vmin;
+        height: 40vmin;
+        top: 1.5vmin;
+        left: 57%;
+        
+        &::after {
+            top: 0vmin;
+            left: -3%;
+            content: '';
+            position: absolute;
+            width: 40vmin;
+            height: 40vmin;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border-top: 10vmin solid var(--hat-color);
+            border-left: 8vmin solid transparent;
+            border-right: 0.25vmin solid transparent;
+            z-index: 1;
+            rotate: -3deg;
+            filter: drop-shadow(0 0.5vmin 0 rgba(0, 0, 0, 1)) drop-shadow(0.25vmin -0.5vmin rgba(0, 0, 0, 1));
+            clip-path: polygon(61% 0, 100% 0, 100% 74%, 69% 0%);
+        }
+
+
+        .folds {
+            top: 55%;
+            left: 53%;
+            display: grid;
+            place-items: center;
+        }
+
+        .fold {
+            width: 2.5vmin;
+            height: 3vmin;
+            background-color: var(--white-color);
+            border-radius: 50%;
+            z-index: 20;
+            transform-origin: center;
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+
+            &:first-child {
+                clip-path: unset;
+                width: 3vmin;
+                height: 3vmin;
+                opacity: 0.4;
+            }
+
+            &:nth-child(2) {
+                border: 0.3vmin solid var(--black-color);
+                z-index: 19;
+                transform: translateY(-0.75vmin) rotate(8deg) translateX(0.5vmin);
+            }
+
+            &:nth-child(3) {
+                border: 0.3vmin solid var(--black-color);
+                z-index: 19;
+                left: 10%;
+                transform: rotate(72deg);
+            }
+            
+            &:nth-child(4) {
+                border: 0.3vmin solid var(--black-color);
+                z-index: 19;
+                transform: rotate(176deg) translateY(-25%);
+            }
+        }
+    }
 }
 
 .face {
@@ -199,7 +277,7 @@
                 position: absolute;
                 width: 1.5vmin;
                 height: 1.5vmin;
-                background-color: var(--white-color);
+                /* background-color: var(--white-color); */
                 border-radius: 50%;
                 top: 50%;
                 filter: blur(0.1vmin);
@@ -443,18 +521,33 @@
         transform: translateX(-50%) translateY(5.75vmin);
         border: 0.5vmin solid var(--black-color);
     }
-
+    
     .collar {
         position: absolute;
         left: 51%;
         width: 8.5vmin;
         height: 15vmin;
-        background-color: var(--white-color);
+        background-color: var(--snow-color);
         border-radius: 50%;
         transform: translateX(-50%) translateY(-20%);
         z-index: -5;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1vmin;
+            height: 3vmin;
+            left: 50%;
+            bottom: -65%;
+            z-index: -3;
+            background-color: var(--skin-color);
+            border-radius: 50%;
+            clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 80%);
+            transform: translateX(-50%) translateY(5.75vmin);
+            border: 0.3vmin solid var(--black-color);
+        }
     }
-
+    
     .fold {
         width: 4vmin;
         height: 4vmin;
@@ -561,8 +654,10 @@
             top: 23vmin;
             left: unset;
             right: -0.75vmin;
+            rotate: 12deg;
             box-shadow: inset 0 -0.5vmin 0.2vmin rgba(0, 0, 0, 0.2);
-            clip-path: polygon(0 0, 76% 24%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 76% 24%, 100% 100%, 24% 100%);
+            border-width: 0.4vmin;
         }
         &:nth-child(19) {
             top: 23vmin;
@@ -570,7 +665,8 @@
             right: -3.25vmin;
             rotate: -18deg;
             box-shadow: inset 0 -0.5vmin 0.2vmin rgba(0, 0, 0, 0.2);
-            clip-path: polygon(24% 24%, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(24% 24%, 100% 0%, 70% 100%, 0 100%);
+            border-width: 0.4vmin;
         }
     }
 }
@@ -587,20 +683,75 @@
     border: 0.5vmin solid var(--black-color);
 
     .fluff {
-        bottom: 10%;
         left: 50%;
         width: 100%;
         height: 100%;
         
         .fold {
-            height: 3vmin;
-            width: 3vmin;
-            left: 8%;
-            top: 10%;
+            height: 3.5vmin;
+            width: 3.5vmin;
+            left: 7.5%;
+            top: 92%;
             background-color: var(--snow-color);
-            border: 0.5vmin solid var(--black-color);
+            border: 0.4vmin solid var(--black-color);
             border-radius: 50%;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            box-shadow: inset 0 -0.5vmin 0.2vmin rgba(0, 0, 0, 0.2);
+            clip-path: polygon(0% 0%, 80% 0%, 90% 100%, 20% 100%);
+            
+            &:nth-child(1) {
+                clip-path: polygon(0% 0%, 80% 0%, 95% 100%, 20% 100%);
+            }
+            &:nth-child(2) {
+                left: 17.5%;
+                top: 90%;
+                rotate: -10deg;
+                scale: 1.01;
+            }
+            
+            &:nth-child(3) {
+                left: 27.5%;
+                top: 88%;
+                rotate: -10deg;
+                scale: 1.01;
+                z-index: 2;
+            }
+            
+            &:nth-child(4) {
+                left: 37%;
+                top: 85.5%;
+                rotate: -10deg;
+                scale: 1.01;
+                clip-path: polygon(0% 0%, 80% 0%, 120% 100%, 20% 100%);
+            }
+            
+            &:nth-child(5) {
+                left: -22.5%;
+                top: 93%;
+                rotate: 10deg;
+                scale: 1.01;
+            }
+            
+            &:nth-child(6) {
+                left: -32.5%;
+                top: 91%;
+                rotate: 10deg;
+                scale: 1.01;
+            }
+            
+            &:nth-child(7) {
+                left: -42.5%;
+                top: 89%;
+                rotate: 10deg;
+                scale: 1.01;
+            }
+
+            &:nth-child(8) {
+                left: -52.5%;
+                top: 87%;
+                rotate: 10deg;
+                scale: 1.01;
+                clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+            }
         }
     }
 }
